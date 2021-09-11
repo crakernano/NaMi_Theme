@@ -1622,3 +1622,12 @@ textarea::placeholder {
 	font-size: .6rem;
 	font-style: italic;
 }
+
+#post-box{
+	padding: 0px 50px;
+	text-align: justify;
+}
+
+#post-box p{
+	margin-top:1.5rem;
+}
