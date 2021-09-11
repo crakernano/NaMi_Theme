@@ -8,7 +8,7 @@
      echo $html[0];
 ?>
 <?php while(have_posts()): the_post(); ?>
-<article class="font-sans relative py-24 md:py-28 bg-white overflow-hidden" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="font-sans relative py-24 md:py-28 bg-white overflow-hidden" itemscope itemtype="http://schema.org/BlogPosting" id="post-box">
     <header class="relative px-4 sm:px-6 lg:px-8">
       <div class="text-lg max-w-prose mx-auto mb-4">
         <h1 class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-gray-800 sm:text-4xl sm:leading-10" itemprop="name headline">
