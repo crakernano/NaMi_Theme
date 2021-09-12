@@ -9,7 +9,7 @@
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'
+          style='background-image: url("<?php echo get_the_post_thumbnail_url($id_home,'full') ?>");'
         >
           <span
             id="blackOverlay"
