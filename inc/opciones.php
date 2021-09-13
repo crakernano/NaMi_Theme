@@ -12,7 +12,7 @@ function edc_opciones_theme() {
 	 */
 	$cmb_options = new_cmb2_box( array(
 		'id'           => 'edc_theme_opciones',
-		'title'        => esc_html__( 'Escuela de Cocina Ajustes', 'cmb2' ),
+		'title'        => esc_html__( 'NaMi Ajustes', 'cmb2' ),
 		'object_types' => array( 'options-page' ),
 
 		/*
