@@ -1631,3 +1631,18 @@ textarea::placeholder {
 #post-box p{
 	margin-top:1.5rem;
 }
+
+aside.col-lg-3.col-md-4.bg-primary.p-4 div.widget div.wp-block-group div.wp-block-group__inner-container h2{
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+	font-style: italic;
+}
+
+aside.col-lg-3.col-md-4.bg-primary.p-4{
+	background-color: #FFF !important;
+	border-left: solid;
+}
+
+.widget{
+	margin-top: 5rem;
+}
