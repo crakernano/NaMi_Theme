@@ -84,8 +84,7 @@ function edc_estilos_opciones() {
 
      $custom_css = "
           /** Bg color primario **/
-          .btn-primary,
-          .bg-primary,
+          .btn-primary,          
           .alert-primary,
           .list-group-item-primary,
           .comment-respond .submit {
@@ -112,12 +111,12 @@ function edc_estilos_opciones() {
                border-color:  {$color_primario}!important;
           }
 
-          aside .card-meta,
+          .card-meta,
           .badge-secondary,
           .bg-secondary,
           .alert-secondary,
           .list-group-item-secondary,
-          aside .card-footer,
+          .card-footer,
           .page-link:hover   {
                background-color: {$color_secundario} !important;
           }
