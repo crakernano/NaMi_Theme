@@ -76,7 +76,8 @@ function edc_setup() {
      add_theme_support('custom-logo');
      // Menu de navegación
      register_nav_menus( array(
-          'menu_principal' => esc_html__('Menu Principal', 'escuelacocina')
+	     'menu_principal' => esc_html__('Menu Principal', 'escuelacocina'),
+	     'social' => esc_html__('Menu Social', 'escuelacocina')
      ) );
 }
 add_action('after_setup_theme', 'edc_setup');
