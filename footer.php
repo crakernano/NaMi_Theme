@@ -7,23 +7,17 @@
           <h5 class="text-lg mt-0 mb-2 text-gray-700">
 
           </h5>
-          <div class="mt-6">
-            <button
-              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button"
-            >
-              <i class="flex fab fa-twitter"></i></button
-            ><button
-              class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button"
-            >
-              <i class="flex fab fa-facebook-square"></i></button>
-            <button
-              class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button"
-            >
-              <i class="flex fab fa-github"></i>
-            </button>
+	  <div class="mt-6">
+           <?php
+               $args = array(
+                       'menu_class' => 'mt-6',
+                       'container_id' => 'nav_social',
+                       'container_class' => 'bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3',
+                       'theme_location' => 'social'
+                );
+
+               wp_nav_menu($args);
+          ?>
           </div>
           <div class="text-gray-600 text-sm py-1 mt-4">
             Copyright © 2021
