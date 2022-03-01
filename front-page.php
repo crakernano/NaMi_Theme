@@ -207,7 +207,7 @@
                 </p>
               </div>
 	      <div class="flex items-center">
-		<?php $contacto = get_page_by_title('Contacto'); ?>
+		<?php $contacto = get_page_by_title('Nosotros'); ?>
               <a
                 style="margin-top:2rem;"
 		href="<?php echo get_permalink($contacto->ID); ?>"
