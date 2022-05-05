@@ -76,7 +76,8 @@ function edc_setup() {
      add_theme_support('custom-logo');
      // Menu de navegación
      register_nav_menus( array(
-          'menu_principal' => esc_html__('Menu Principal', 'escuelacocina')
+	     'menu_principal' => esc_html__('Menu Principal', 'escuelacocina'),
+	     'social' => esc_html__('Menu Social', 'escuelacocina')
      ) );
 }
 add_action('after_setup_theme', 'edc_setup');
@@ -133,3 +134,17 @@ function edc_widgets_sidebar() {
 
 }
 
+
+function rate2Stars($rate=0){
+
+     $puntuacion = "";
+
+     if( $rate == 0){$puntuacion = "Aun no ha sido valorada";}
+
+     for ($i = 1; $i <= $rate; $i++) {
+          $puntuacion = $puntuacion .  "<i class='fa-solid fa-star'></i>";
+     }
+
+     //ToDO: Puntuaciones decimales usando <i class="fa-solid fa-star-half-stroke"></i>
+     return $puntuacion;
+}

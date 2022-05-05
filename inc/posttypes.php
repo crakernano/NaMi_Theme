@@ -42,7 +42,7 @@ function edc_posttype_productos() {
          // true como paginas (pueden tener hijos), false como posts (no tienen hijos)
          'hierarchical'       => false,
          'menu_position'      => 6,
-         'supports'           => array( 'title', 'editor',  'thumbnail' ),
+         'supports'           => array( 'title', 'editor',  'thumbnail', 'custom-fields' ),
          'show_in_rest'       => true,
          'rest_base'          => 'producto'
      );

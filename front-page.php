@@ -20,12 +20,21 @@
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
+                <h1 class="text-white font-semibold text-5xl ">
 		<?php echo get_bloginfo( 'name' ); ?>
                 </h1>
-		<p class="mt-4 text-lg text-gray-300">
+		<p class="mt-4 text-lg text-gray-300 ">
+    
 		<?php echo get_bloginfo( 'description' ); ?>
                 </p>
+
+      <!-- ICONOS DE LAS APLICACIONES EN LA CABECERA -->
+      <section>
+        <div class="container">
+            <?php edc_query_iconos(); ?>
+          </div>
+      </section> 
+
               </div>
             </div>
           </div>
@@ -49,7 +58,11 @@
             ></polygon>
           </svg>
         </div>
-      </div>
+     
+      
+    </div>
+
+      
       <section class="pb-20 bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
@@ -207,7 +220,7 @@
                 </p>
               </div>
 	      <div class="flex items-center">
-		<?php $contacto = get_page_by_title('Contacto'); ?>
+		<?php $contacto = get_page_by_title('Nosotros'); ?>
               <a
                 style="margin-top:2rem;"
 		href="<?php echo get_permalink($contacto->ID); ?>"
