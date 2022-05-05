@@ -134,3 +134,17 @@ function edc_widgets_sidebar() {
 
 }
 
+
+function rate2Stars($rate=0){
+
+     $puntuacion = "";
+
+     if( $rate == 0){$puntuacion = "Aun no ha sido valorada";}
+
+     for ($i = 1; $i <= $rate; $i++) {
+          $puntuacion = $puntuacion .  "<i class='fa-solid fa-star'></i>";
+     }
+
+     //ToDO: Puntuaciones decimales usando <i class="fa-solid fa-star-half-stroke"></i>
+     return $puntuacion;
+}

@@ -139,7 +139,33 @@ function edc_campos_homepage() {
 
 
 
+
+add_action( 'cmb2_admin_init', 'edc_campos_productos' );
+
+function edc_campos_productos(){
+	$prefix = 'edc_productos_';
+
+	$edc_producto = new_cmb2_box( array(
+		'id'           => $prefix . 'metabox',
+		'title'        => esc_html__( 'Campos de productos', 'cmb2' ),
+		'object_types' => array( 'page' ),
+		'context' 	=> 'normal',
+		'priority'	=> 'high',
+		'show_names'   => 'true',
+	) );
+
+	$edc_producto->add_field( array(
+		'name' => esc_html__( 'Descargas', 'cmb2' ),
+		'desc' => esc_html__( 'Número de descargas', 'cmb2' ),
+		'id'   => $prefix . 'descargas_producto',
+		'type' => 'text',
+	) );
+
+
+}
+
 add_action( 'cmb2_admin_init', 'edc_seccion_nosotros' );
+
 /**
  * Hook in and add a metabox to demonstrate repeatable grouped fields
  */
