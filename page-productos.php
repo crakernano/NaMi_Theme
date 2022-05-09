@@ -23,7 +23,7 @@ get_header();
     <div class="text-lg max-w-prose mx-auto mb-8">
       <h1
         class="font-misc mt-2 mb-4 text-4xl text-center-DIS leading-8 font-extrabold text-gray-800 md:text-4xl sm:leading-10">
-	<?php echo $titulo; ?>	
+	
 	</h1>
         <div class="max-w-prose mx-auto mt-4 mb-6 soopr-btn soopr-btn-def" style="min-height: 36px;"></div>
     </div>
@@ -33,6 +33,7 @@ get_header();
   </div>
 </div>
 
+<div class="col-12" style="height: 100px;"></div>
 
 <?php get_footer()?>
 
