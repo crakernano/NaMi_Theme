@@ -1,7 +1,13 @@
  <header class="header py-5 encabezado">
         <div class="container">
             <div class="row justify-content-center align-items-center">
+            <?php if (is_page('productos')){ ?>
+                <div class="col-md-2 col-8 mb-4 mb-md-0">
+            <?php }else{?>
                 <div class="col-md-4 col-8 mb-4 mb-md-0">
+            
+            <?php
+            } ?>
                     <a href="<?php echo esc_url( home_url('/') ); ?>">
 
                         <?php
@@ -12,7 +18,11 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" class="img-fluid" id="logotipo">
                         <?php endif; ?>
                     </a>
+                    
                 </div>
+                <?php if (is_page('productos')){ ?>
+                    <div class="col-md-2"><h1 class="h1" style="text-transform: capitalize; font-family: 'Bebas Neue', cursive;"><?php echo get_the_title(); ?><h2></div>
+                <?php } ?>
                 <div class="col-md-8">
                   <nav class="navbar navbar-expand-md navbar-light justify-content-center">
                         <button class="navbar-toggler mb-4" data-toggle="collapse" data-target="#nav_principal" aria-expanded="false" type="button">
