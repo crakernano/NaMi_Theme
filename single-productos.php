@@ -143,7 +143,7 @@ h1{
 
     <div class="row mb-3">
 	<div class = "col-md-12 themed-grid-col" id="description-content">
-		pag <?php echo is_page('productos') ?> 
+		
 		<?php the_content(); ?>
 	</div>
     </div>
