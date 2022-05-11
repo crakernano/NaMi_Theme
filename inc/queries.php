@@ -16,7 +16,8 @@ function edc_query_cursos($cantidad = -1) {
           <div class="col-md-6 col-lg-4">
 	       <div class="card movil-aplication">
                     <?php the_post_thumbnail('mediano', array('class' => 'card-img-top')) ?>
-		    <div class="card-body">
+		    <div class="card-body"
+                    style="width: max-content;">
 			<h3 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ;?></a></h3>
 			<span> Salud y bienestar </span>
                          <p class="card-text">

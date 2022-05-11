@@ -19,7 +19,8 @@ get_header();
                               endwhile;
                          ?>
 
-  <div class="relative px-4 sm:px-6 lg:px-8">
+  <div class="relative px-4 sm:px-6 lg:px-8" 
+  style="height: calc(100vh - 300px);">
     <div class="text-lg max-w-prose mx-auto mb-8">
       <h1
         class="font-misc mt-2 mb-4 text-4xl text-center-DIS leading-8 font-extrabold text-gray-800 md:text-4xl sm:leading-10">

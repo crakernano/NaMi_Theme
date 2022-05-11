@@ -76,7 +76,9 @@
                   >
                     <i class="fas fa-award"></i>
                   </div>
-                  <h6 class="text-xl font-semibold"><?php echo get_post_meta($id_home, 'edc_homepage_caja_titulo_izq', true);?></h6>
+                  <h6 class="text-xl font-semibold"
+                  style="font-family: 'Bebas Neue', cursive;"
+                  ><?php echo get_post_meta($id_home, 'edc_homepage_caja_titulo_izq', true);?></h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     <?php echo get_post_meta($id_home, 'edc_homepage_caja_texto_izq', true);?>
                   </p>
@@ -93,7 +95,9 @@
                   >
                     <i class="fas fa-retweet"></i>
                   </div>
-                  <h6 class="text-xl font-semibold"><?php echo get_post_meta($id_home, 'edc_homepage_caja_titulo_centro', true);?></h6>
+                  <h6 class="text-xl font-semibold"
+                  style="font-family: 'Bebas Neue', cursive;"
+                  ><?php echo get_post_meta($id_home, 'edc_homepage_caja_titulo_centro', true);?></h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     <?php echo get_post_meta($id_home, 'edc_homepage_caja_texto_centro', true);?>
                   </p>
@@ -110,7 +114,9 @@
                   >
                     <i class="fas fa-fingerprint"></i>
                   </div>
-                  <h6 class="text-xl font-semibold"><?php echo get_post_meta($id_home, 'edc_homepage_caja_titulo_dch', true);?></h6>
+                  <h6 class="text-xl font-semibold"
+                  style="font-family: 'Bebas Neue', cursive;"
+                  ><?php echo get_post_meta($id_home, 'edc_homepage_caja_titulo_dch', true);?></h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     <?php echo get_post_meta($id_home, 'edc_homepage_caja_texto_dch', true);?>
                   </p>
@@ -125,8 +131,11 @@
               >
                 <i class="fas fa-user-friends text-xl"></i>
               </div>
-              <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
+              <h3 
+              class="text-3xl mb-2 font-semibold leading-normal"
+              style="font-family: 'Bebas Neue', cursive;"
+              >
+                Nuestra marca
               </h3>
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
@@ -139,10 +148,25 @@
 	      >
 	     </p>
               <?php $productos = get_page_by_title('productos'); ?>
+<!--
               <a
                 href="<?php echo get_permalink($productos->ID); ?>"
                 class="font-bold text-gray-500 px-8 py-4 rounded-md bg-gray-50 hover:bg-gray-400 hover:text-gray-50"
                 >Conoce nuestros productos</a>
+-->
+                <a type="button" 
+                   class="btn btn-light" 
+                   href="<?php echo get_permalink($productos->ID); ?>"
+                   style="height: 4rem;
+                          font-weight: 700;
+                          margin-top: 2rem;
+                          border-radius: .375rem;
+                          --tw-bg-opacity: 1;
+                          background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+                          color: rgba(107, 114, 128, var(--tw-text-opacity));
+                          padding-top: 1.2rem;
+                          "                          
+                   >Conoce nuestros productos</a>
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
@@ -163,7 +187,7 @@
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
-                      class="text-pink-600 fill-current"
+                      class="text-blue-600 fill-current"
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
@@ -214,18 +238,36 @@
                 >
                   <i class="fas fa-rocket text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-semibold">A growing company</h3>
+                <h3 
+                class="text-3xl font-semibold"
+                style="font-family: 'Bebas Neue', cursive;"
+                >Crecemos contigo</h3>
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                   <?php echo get_post_meta($id_home, 'edc_homepage_caja_texto_3', true);?>
                 </p>
               </div>
 	      <div class="flex items-center">
 		<?php $contacto = get_page_by_title('Nosotros'); ?>
+<!--
               <a
                 style="margin-top:2rem;"
 		href="<?php echo get_permalink($contacto->ID); ?>"
                 class="font-bold text-gray-500 px-8 py-4 rounded-md bg-gray-50 hover:bg-gray-400 hover:text-gray-50"
                 >Contacta con nosotros</a>
+-->
+                <a type="button" 
+                   class="btn btn-light" 
+                   href="<?php echo get_permalink($contacto->ID); ?>"
+                   style="height: 4rem;
+                          font-weight: 700;
+                          margin-top: 2rem;
+                          border-radius: .375rem;
+                          --tw-bg-opacity: 1;
+                          background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+                          color: rgba(107, 114, 128, var(--tw-text-opacity));
+                          padding-top: 1.2rem;
+                          "                          
+                   >Contacta con nosotros</a>
                 </div>
             </div>
           </div>
@@ -235,7 +277,10 @@
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">The Team</h2>
+              <h2 
+              class="text-4xl font-semibold"
+              style="font-family: 'Bebas Neue', cursive;"
+              >El equipo</h2>
               <p class="text-lg leading-relaxed m-4 text-gray-600">
 
               </p>
@@ -291,7 +336,9 @@
         <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold text-white">Lo que dicen de nosotros</h2>
+              <h2 class="text-4xl font-semibold text-white"
+              style="font-family: 'Bebas Neue', cursive;"
+              >Lo que dicen de nosotros</h2>
               <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500"></p>
             </div>
           </div>

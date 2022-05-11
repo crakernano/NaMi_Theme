@@ -4,7 +4,7 @@
     Author: David Martín Peral 
     Author URI: https://www.crakernano.com
     Description: Tema para la web de NaMi
-    Version: 1.6
+    Version: 1.7
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Text Domain: NaMi Tech
@@ -1651,4 +1651,19 @@ aside.col-lg-3.col-md-4.bg-primary.p-4{
     font-family: 'Bebas Neue', cursive;
 }
 
+}
+
+.custom-boton{
+    height: 4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    border-radius: .375rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
+     padding-top: 1.2rem;
+}
+
+.custom-boton a:hover{
+    background-color: rgba(249, 250, 251, 0.2);
 }
